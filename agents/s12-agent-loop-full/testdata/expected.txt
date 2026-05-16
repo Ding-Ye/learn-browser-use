@@ -1,0 +1,51 @@
+$ go run .
+=== s12 agent run ===
+backend URL: http://127.0.0.1:PORT
+[step 0] assistant: I'll type the query first. (stop=tool_use)
+[step 0]   type → typed "browser-use" into [0]
+[step 1] assistant: Now submit search. (stop=tool_use)
+[step 1]   search → navigated to https://search.example/results?q=browser-use
+[step 2] assistant: Opening the first result. (stop=tool_use)
+[step 2]   click → clicked [0] → navigated to https://article.example/200
+[step 3] assistant: Task complete. (stop=tool_use)
+[step 3]   done → __done__:First article on browser-use
+
+Final answer: First article on browser-use
+
+--- CDP frames ---
+  [0] Target.attachToTarget map[flatten:true targetId:stub-target-0]
+  [1] Input.insertText map[backendNodeId:100 text:browser-use]
+  [2] Page.navigate map[url:https://search.example/results?q=browser-use]
+  [3] Input.dispatchMouseEvent map[backendNodeId:200 button:left clickCount:1 type:mousePressed x:210 y:49]
+
+--- Navigations seen by watchdog ---
+  [0] https://search.example/results?q=browser-use
+  [1] https://article.example/200
+
+--- DOM at end ---
+URL: https://article.example/200
+(no DOM available)
+
+--- Token cost — 4 invocation(s)
+  Total: in=1580 tok  out=150 tok  cost=$0.0003
+  Per model:
+    gpt-4o-mini     invocations=4  in=1580  out=150  cost=$0.0003
+
+
+$ go test -v ./...
+=== RUN   TestFullE2EAgainstStub
+--- PASS: TestFullE2EAgainstStub (0.000s)
+=== RUN   TestFallbackOnTimeout
+--- PASS: TestFallbackOnTimeout (0.000s)
+=== RUN   TestPlanningEvery5Steps
+--- PASS: TestPlanningEvery5Steps (0.000s)
+=== RUN   TestMaxStepsTermination
+--- PASS: TestMaxStepsTermination (0.000s)
+=== RUN   TestDoneExitsCleanly
+--- PASS: TestDoneExitsCleanly (0.000s)
+=== RUN   TestKeepLastNCompaction
+--- PASS: TestKeepLastNCompaction (0.000s)
+=== RUN   TestFilesystemSandboxRejectsAbsolutePath
+--- PASS: TestFilesystemSandboxRejectsAbsolutePath (0.000s)
+PASS
+ok  	learn-browser-use/s12-agent-loop-full	(cached)

@@ -30,6 +30,8 @@ jobs:
           - s08-dom-serializer
           - s09-dom-service
           - s10-token-cost
+          - s11-filesystem-sandbox
+          - s12-agent-loop-full
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-go@v5

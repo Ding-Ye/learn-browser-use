@@ -11,4 +11,6 @@ use (
 	./agents/s08-dom-serializer
 	./agents/s09-dom-service
 	./agents/s10-token-cost
+	./agents/s11-filesystem-sandbox
+	./agents/s12-agent-loop-full
 )

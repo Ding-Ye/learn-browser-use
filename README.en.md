@@ -51,8 +51,8 @@ Requires Go ≥ 1.24. Stdlib only — no external Go dependencies in any session
 | s08 | [DOM serializer for LLM](./docs/en/s08-dom-serializer.md) ([zh](./docs/zh/s08-dom-serializer.md)) | `browser_use/dom/serializer/serializer.py` | ✅ |
 | s09 | [DOM service (snapshot + filter)](./docs/en/s09-dom-service.md) ([zh](./docs/zh/s09-dom-service.md)) | `browser_use/dom/service.py` | ✅ |
 | s10 | [Token cost tracking](./docs/en/s10-token-cost.md) ([zh](./docs/zh/s10-token-cost.md)) | `browser_use/tokens/service.py` | ✅ |
-| s11 | Filesystem sandbox | `browser_use/filesystem/file_system.py` | ⏳ |
-| s12 | Full agent loop | `browser_use/agent/service.py` (full) | ⏳ |
+| s11 | [Filesystem sandbox](./docs/en/s11-filesystem-sandbox.md) ([zh](./docs/zh/s11-filesystem-sandbox.md)) | `browser_use/filesystem/file_system.py` | ✅ |
+| s12 | [Full agent loop](./docs/en/s12-agent-loop-full.md) ([zh](./docs/zh/s12-agent-loop-full.md)) | `browser_use/agent/service.py` (full) | ✅ |
 | s_full | End-to-end integration | (doc only) | ⏳ |
 | A | Appendix A · LLM-as-driver philosophy | mental model | ⏳ |
 | B | Appendix B · Upstream source-reading map | reference | ⏳ |

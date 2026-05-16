@@ -1,0 +1,40 @@
+# s11 — filesystem-sandbox demo
+Sandbox root: <TMPDIR>
+
+(a) write+read notes.txt — should succeed
+  read back 46 bytes; first line: "TODO: learn sandboxing"
+  also wrote subdir/plan.md
+
+(b) write screenshot.png — should be refused
+  refused: disallowed extension: .png
+
+(c) read traversal attempts — all should be refused
+  ../../etc/passwd                 -> refused: unsafe path: traversal segment in "../../etc/passwd" rejected
+  subdir/../../etc/passwd          -> refused: unsafe path: traversal segment in "subdir/../../etc/passwd" rejected
+  /etc/passwd                      -> refused: unsafe path: absolute path "/etc/passwd" rejected
+
+(d) list . — see what's in the sandbox
+  - notes.txt
+  - subdir
+
+Done. All four steps behaved as expected.
+
+---
+test output:
+
+=== RUN   TestPathTraversalRejected
+--- PASS: TestPathTraversalRejected (0.00s)
+=== RUN   TestBinaryExtensionBlocked
+--- PASS: TestBinaryExtensionBlocked (0.00s)
+=== RUN   TestValidTextFileWorks
+--- PASS: TestValidTextFileWorks (0.01s)
+=== RUN   TestConcurrentWritesSafe
+--- PASS: TestConcurrentWritesSafe (0.04s)
+=== RUN   TestMaxSizeEnforced
+--- PASS: TestMaxSizeEnforced (0.00s)
+=== RUN   TestListReturnsSorted
+--- PASS: TestListReturnsSorted (0.00s)
+=== RUN   TestExistsIsQuietOnUnsafe
+--- PASS: TestExistsIsQuietOnUnsafe (0.00s)
+PASS
+ok  	learn-browser-use/s11-filesystem-sandbox	~1.0s

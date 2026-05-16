@@ -79,6 +79,8 @@ function guessUpstreamFile(slug: string): string | null {
     "s08-dom-serializer": "s08-dom-serializer.py",
     "s09-dom-service": "s09-dom-service.py",
     "s10-token-cost": "s10-token-cost.py",
+    "s11-filesystem-sandbox": "s11-filesystem-sandbox.py",
+    "s12-agent-loop-full": "s12-agent-loop-full.py",
   };
   return map[slug] ?? null;
 }

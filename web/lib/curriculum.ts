@@ -85,13 +85,13 @@ export const CURRICULUM: ChapterMeta[] = [
     slug: "s11-filesystem-sandbox",
     num: "s11",
     title: { zh: "文件系统沙箱", en: "Filesystem sandbox" },
-    available: false,
+    available: true,
   },
   {
     slug: "s12-agent-loop-full",
     num: "s12",
     title: { zh: "完整 agent loop", en: "Full agent loop (integration code)" },
-    available: false,
+    available: true,
   },
   {
     slug: "s_full-integration",

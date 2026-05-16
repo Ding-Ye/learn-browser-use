@@ -56,8 +56,8 @@ Requires Go ≥ 1.24. Stdlib only.
 | s08 | [DOM 序列化 / DOM serializer](./docs/zh/s08-dom-serializer.md) ([en](./docs/en/s08-dom-serializer.md)) | `browser_use/dom/serializer/serializer.py` | ✅ |
 | s09 | [DOM 服务 / DOM service](./docs/zh/s09-dom-service.md) ([en](./docs/en/s09-dom-service.md)) | `browser_use/dom/service.py` | ✅ |
 | s10 | [Token 计费 / Token cost tracking](./docs/zh/s10-token-cost.md) ([en](./docs/en/s10-token-cost.md)) | `browser_use/tokens/service.py` | ✅ |
-| s11 | 文件系统沙箱 / Filesystem sandbox | `browser_use/filesystem/file_system.py` | ⏳ |
-| s12 | 完整 agent loop / Full agent loop | `browser_use/agent/service.py` (full) | ⏳ |
+| s11 | [文件系统沙箱 / Filesystem sandbox](./docs/zh/s11-filesystem-sandbox.md) ([en](./docs/en/s11-filesystem-sandbox.md)) | `browser_use/filesystem/file_system.py` | ✅ |
+| s12 | [完整 agent loop / Full agent loop](./docs/zh/s12-agent-loop-full.md) ([en](./docs/en/s12-agent-loop-full.md)) | `browser_use/agent/service.py` (full) | ✅ |
 | s_full | 端到端集成 / End-to-end integration | (doc only) | ⏳ |
 | A | 附录 A · LLM-as-driver 哲学 / Appendix A | mental model | ⏳ |
 | B | 附录 B · 上游源码导读地图 / Appendix B | reference | ⏳ |
