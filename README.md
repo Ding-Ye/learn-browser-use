@@ -58,9 +58,9 @@ Requires Go ≥ 1.24. Stdlib only.
 | s10 | [Token 计费 / Token cost tracking](./docs/zh/s10-token-cost.md) ([en](./docs/en/s10-token-cost.md)) | `browser_use/tokens/service.py` | ✅ |
 | s11 | [文件系统沙箱 / Filesystem sandbox](./docs/zh/s11-filesystem-sandbox.md) ([en](./docs/en/s11-filesystem-sandbox.md)) | `browser_use/filesystem/file_system.py` | ✅ |
 | s12 | [完整 agent loop / Full agent loop](./docs/zh/s12-agent-loop-full.md) ([en](./docs/en/s12-agent-loop-full.md)) | `browser_use/agent/service.py` (full) | ✅ |
-| s_full | 端到端集成 / End-to-end integration | (doc only) | ⏳ |
-| A | 附录 A · LLM-as-driver 哲学 / Appendix A | mental model | ⏳ |
-| B | 附录 B · 上游源码导读地图 / Appendix B | reference | ⏳ |
+| s_full | [端到端集成 / End-to-end integration](./docs/zh/s_full-integration.md) ([en](./docs/en/s_full-integration.md)) | (doc only) | ✅ |
+| A | [附录 A · LLM-as-driver 哲学 / Appendix A](./docs/zh/appendix-a-llm-as-driver.md) ([en](./docs/en/appendix-a-llm-as-driver.md)) | mental model | ✅ |
+| B | [附录 B · 上游源码导读地图 / Appendix B](./docs/zh/appendix-b-upstream-map.md) ([en](./docs/en/appendix-b-upstream-map.md)) | reference | ✅ |
 
 ✅ = 已发布 · ⏳ = 计划中（this repo is being generated chapter-by-chapter）
 

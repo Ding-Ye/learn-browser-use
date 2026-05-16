@@ -53,9 +53,9 @@ Requires Go ≥ 1.24. Stdlib only — no external Go dependencies in any session
 | s10 | [Token cost tracking](./docs/en/s10-token-cost.md) ([zh](./docs/zh/s10-token-cost.md)) | `browser_use/tokens/service.py` | ✅ |
 | s11 | [Filesystem sandbox](./docs/en/s11-filesystem-sandbox.md) ([zh](./docs/zh/s11-filesystem-sandbox.md)) | `browser_use/filesystem/file_system.py` | ✅ |
 | s12 | [Full agent loop](./docs/en/s12-agent-loop-full.md) ([zh](./docs/zh/s12-agent-loop-full.md)) | `browser_use/agent/service.py` (full) | ✅ |
-| s_full | End-to-end integration | (doc only) | ⏳ |
-| A | Appendix A · LLM-as-driver philosophy | mental model | ⏳ |
-| B | Appendix B · Upstream source-reading map | reference | ⏳ |
+| s_full | [End-to-end integration](./docs/en/s_full-integration.md) ([zh](./docs/zh/s_full-integration.md)) | (doc only) | ✅ |
+| A | [Appendix A · LLM-as-driver philosophy](./docs/en/appendix-a-llm-as-driver.md) ([zh](./docs/zh/appendix-a-llm-as-driver.md)) | mental model | ✅ |
+| B | [Appendix B · Upstream source-reading map](./docs/en/appendix-b-upstream-map.md) ([zh](./docs/zh/appendix-b-upstream-map.md)) | reference | ✅ |
 
 ✅ = published · ⏳ = planned (this repo is being generated chapter-by-chapter)
 
