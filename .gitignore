@@ -1,0 +1,29 @@
+# Local skill state (research notes, plan, upstream clone). Never commit.
+.learn/
+
+# Node / Next.js
+node_modules/
+.next/
+out/
+*.tsbuildinfo
+.vercel/
+
+# Go
+*.test
+*.out
+# Built binaries (matches `go build` output named after each session dir)
+agents/s*/s*-*
+!agents/s*/s*-*.go
+!agents/s*/s*-*.py
+!agents/s*/s*-*.md
+
+# Editor
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*~
+
+# Env files
+.env
+.env.local

@@ -1,0 +1,14 @@
+$ go run . -v "search hacker news"
+[step 0] assistant: I will search for "hacker news".
+[step 0] search -> RESULT: top 3 hits for "hacker news":   1. https://example.com/hacker news ...
+[step 1] assistant: Task complete. top 3 hits for "hacker news":
+  1. https://example.com/hacker news
+  2. https://en.wikipedia.org/wiki/hacker news
+  3. https://github.com/search?q=hacker news
+Task complete. top 3 hits for "hacker news":
+  1. https://example.com/hacker news
+  2. https://en.wikipedia.org/wiki/hacker news
+  3. https://github.com/search?q=hacker news
+
+$ go run . "nothing to do"
+I see no action to take. Marking task done.
