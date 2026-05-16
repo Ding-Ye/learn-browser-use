@@ -67,19 +67,19 @@ export const CURRICULUM: ChapterMeta[] = [
     slug: "s08-dom-serializer",
     num: "s08",
     title: { zh: "DOM 序列化", en: "DOM serializer for LLM" },
-    available: false,
+    available: true,
   },
   {
     slug: "s09-dom-service",
     num: "s09",
     title: { zh: "DOM 服务", en: "DOM service (snapshot + filter)" },
-    available: false,
+    available: true,
   },
   {
     slug: "s10-token-cost",
     num: "s10",
     title: { zh: "Token 计费", en: "Token cost tracking" },
-    available: false,
+    available: true,
   },
   {
     slug: "s11-filesystem-sandbox",

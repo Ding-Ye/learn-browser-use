@@ -1,0 +1,18 @@
+{
+  "gpt-4o": {
+    "input_per_1k": 0.0025,
+    "output_per_1k": 0.01
+  },
+  "gpt-4o-mini": {
+    "input_per_1k": 0.00015,
+    "output_per_1k": 0.0006
+  },
+  "claude-3-5-sonnet": {
+    "input_per_1k": 0.003,
+    "output_per_1k": 0.015
+  },
+  "gemini-1.5-pro": {
+    "input_per_1k": 0.00125,
+    "output_per_1k": 0.005
+  }
+}

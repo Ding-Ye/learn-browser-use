@@ -1,0 +1,38 @@
+$ go run .
+# DOMService cache + invalidation demo
+
+[Get #1] snapshot calls so far: 1
+         serialized text:
+  [0] <button> submit
+  [1] <button> cancel
+
+
+[Get #2] snapshot calls so far: 1  (expected unchanged)
+         text identical to Get #1? true
+
+[NavigationEvent emitted; CurrentURL → https://b.example.com]
+
+[Get #3] snapshot calls so far: 2  (expected to be +1 from Get #2)
+         serialized text:
+  [0] <a> home
+  [1] <a> about
+  [2] <a> contact
+
+
+Selector map size for Get #3: 3 entries
+
+$ go test -v ./...
+=== RUN   TestSnapshotIsCached
+--- PASS: TestSnapshotIsCached (0.00s)
+=== RUN   TestNavigationInvalidates
+--- PASS: TestNavigationInvalidates (0.00s)
+=== RUN   TestCacheTTLExpires
+--- PASS: TestCacheTTLExpires (0.00s)
+=== RUN   TestIframeMaxDepthEnforced
+--- PASS: TestIframeMaxDepthEnforced (0.00s)
+=== RUN   TestViewportThresholdFilters
+--- PASS: TestViewportThresholdFilters (0.00s)
+=== RUN   TestSubscribedAtConstruction
+--- PASS: TestSubscribedAtConstruction (0.00s)
+PASS
+ok  	learn-browser-use/s09-dom-service

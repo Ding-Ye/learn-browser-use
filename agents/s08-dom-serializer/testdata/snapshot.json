@@ -1,0 +1,205 @@
+{
+  "backendNodeId": 1,
+  "tag": "html",
+  "bbox": [0, 0, 1280, 2400],
+  "visible": true,
+  "zIndex": 0,
+  "children": [
+    {
+      "backendNodeId": 2,
+      "tag": "body",
+      "bbox": [0, 0, 1280, 2400],
+      "visible": true,
+      "zIndex": 0,
+      "children": [
+        {
+          "backendNodeId": 3,
+          "tag": "header",
+          "bbox": [0, 0, 1280, 80],
+          "visible": true,
+          "zIndex": 0,
+          "children": [
+            {
+              "backendNodeId": 4,
+              "tag": "h1",
+              "bbox": [16, 16, 400, 48],
+              "visible": true,
+              "zIndex": 0,
+              "children": [
+                {
+                  "backendNodeId": 5,
+                  "text": "Welcome",
+                  "bbox": [16, 16, 200, 48],
+                  "visible": true,
+                  "zIndex": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "backendNodeId": 6,
+          "tag": "main",
+          "bbox": [0, 100, 1280, 500],
+          "visible": true,
+          "zIndex": 0,
+          "children": [
+            {
+              "backendNodeId": 7,
+              "tag": "a",
+              "attributes": {"href": "/search"},
+              "bbox": [16, 120, 100, 32],
+              "visible": true,
+              "interactive": true,
+              "zIndex": 0,
+              "children": [
+                {
+                  "backendNodeId": 8,
+                  "tag": "button",
+                  "attributes": {"type": "button"},
+                  "bbox": [20, 124, 80, 24],
+                  "visible": true,
+                  "interactive": true,
+                  "zIndex": 0,
+                  "children": [
+                    {
+                      "backendNodeId": 9,
+                      "text": "Go",
+                      "bbox": [20, 124, 80, 24],
+                      "visible": true,
+                      "zIndex": 0
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "backendNodeId": 10,
+              "tag": "input",
+              "attributes": {"type": "text", "name": "q", "placeholder": "Search"},
+              "bbox": [16, 180, 300, 32],
+              "visible": true,
+              "interactive": true,
+              "zIndex": 0
+            },
+            {
+              "backendNodeId": 11,
+              "tag": "div",
+              "attributes": {"style": "display:none"},
+              "bbox": [0, 0, 0, 0],
+              "visible": true,
+              "zIndex": 0,
+              "children": [
+                {
+                  "backendNodeId": 12,
+                  "tag": "button",
+                  "attributes": {"id": "secret"},
+                  "bbox": [16, 240, 100, 32],
+                  "visible": true,
+                  "interactive": true,
+                  "zIndex": 0,
+                  "children": [
+                    {
+                      "backendNodeId": 13,
+                      "text": "Hidden Button",
+                      "bbox": [16, 240, 100, 32],
+                      "visible": true,
+                      "zIndex": 0
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "backendNodeId": 14,
+              "tag": "a",
+              "attributes": {"href": "/faraway"},
+              "bbox": [16, 1900, 200, 32],
+              "visible": true,
+              "interactive": true,
+              "zIndex": 0,
+              "children": [
+                {
+                  "backendNodeId": 15,
+                  "text": "Below the fold",
+                  "bbox": [16, 1900, 200, 32],
+                  "visible": true,
+                  "zIndex": 0
+                }
+              ]
+            },
+            {
+              "backendNodeId": 16,
+              "tag": "p",
+              "bbox": [16, 220, 600, 24],
+              "visible": true,
+              "zIndex": 0,
+              "children": [
+                {
+                  "backendNodeId": 17,
+                  "text": "Help text",
+                  "bbox": [16, 220, 600, 24],
+                  "visible": true,
+                  "zIndex": 0
+                }
+              ]
+            },
+            {
+              "backendNodeId": 22,
+              "tag": "button",
+              "attributes": {"type": "submit"},
+              "bbox": [16, 260, 100, 32],
+              "visible": true,
+              "interactive": true,
+              "zIndex": 0,
+              "children": [
+                {
+                  "backendNodeId": 23,
+                  "text": "Submit",
+                  "bbox": [16, 260, 100, 32],
+                  "visible": true,
+                  "zIndex": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "backendNodeId": 18,
+          "tag": "div",
+          "attributes": {"id": "behind"},
+          "bbox": [100, 300, 200, 200],
+          "visible": true,
+          "interactive": true,
+          "zIndex": 0,
+          "children": [
+            {
+              "backendNodeId": 19,
+              "text": "Behind modal",
+              "bbox": [100, 300, 200, 200],
+              "visible": true,
+              "zIndex": 0
+            }
+          ]
+        },
+        {
+          "backendNodeId": 20,
+          "tag": "div",
+          "attributes": {"id": "modal", "role": "dialog"},
+          "bbox": [50, 250, 600, 400],
+          "visible": true,
+          "zIndex": 10,
+          "children": [
+            {
+              "backendNodeId": 21,
+              "text": "MODAL CONTENT",
+              "bbox": [100, 280, 500, 60],
+              "visible": true,
+              "zIndex": 10
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

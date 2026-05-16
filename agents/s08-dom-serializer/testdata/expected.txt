@@ -1,0 +1,9 @@
+Welcome
+[1]<a href="/search" />
+  <button type="button" />
+    Go
+[2]<input name="q" placeholder="Search" type="text" />
+Help text
+[3]<button type="submit" />
+  Submit
+MODAL CONTENT

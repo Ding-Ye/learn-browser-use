@@ -8,4 +8,7 @@ use (
 	./agents/s05-element-actor
 	./agents/s06-watchdog-pattern
 	./agents/s07-browser-session
+	./agents/s08-dom-serializer
+	./agents/s09-dom-service
+	./agents/s10-token-cost
 )

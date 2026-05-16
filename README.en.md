@@ -48,9 +48,9 @@ Requires Go ≥ 1.24. Stdlib only — no external Go dependencies in any session
 | s05 | [Element actor (CDP abstraction)](./docs/en/s05-element-actor.md) ([zh](./docs/zh/s05-element-actor.md)) | `browser_use/actor/element.py` | ✅ |
 | s06 | [Watchdog & event bus](./docs/en/s06-watchdog-pattern.md) ([zh](./docs/zh/s06-watchdog-pattern.md)) | `browser_use/browser/watchdog_base.py` | ✅ |
 | s07 | [Browser session](./docs/en/s07-browser-session.md) ([zh](./docs/zh/s07-browser-session.md)) | `browser_use/browser/session.py` | ✅ |
-| s08 | DOM serializer for LLM | `browser_use/dom/serializer/serializer.py` | ⏳ |
-| s09 | DOM service (snapshot + filter) | `browser_use/dom/service.py` | ⏳ |
-| s10 | Token cost tracking | `browser_use/tokens/service.py` | ⏳ |
+| s08 | [DOM serializer for LLM](./docs/en/s08-dom-serializer.md) ([zh](./docs/zh/s08-dom-serializer.md)) | `browser_use/dom/serializer/serializer.py` | ✅ |
+| s09 | [DOM service (snapshot + filter)](./docs/en/s09-dom-service.md) ([zh](./docs/zh/s09-dom-service.md)) | `browser_use/dom/service.py` | ✅ |
+| s10 | [Token cost tracking](./docs/en/s10-token-cost.md) ([zh](./docs/zh/s10-token-cost.md)) | `browser_use/tokens/service.py` | ✅ |
 | s11 | Filesystem sandbox | `browser_use/filesystem/file_system.py` | ⏳ |
 | s12 | Full agent loop | `browser_use/agent/service.py` (full) | ⏳ |
 | s_full | End-to-end integration | (doc only) | ⏳ |

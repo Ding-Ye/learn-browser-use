@@ -53,9 +53,9 @@ Requires Go ≥ 1.24. Stdlib only.
 | s05 | [元素操作 (CDP) / Element actor (CDP)](./docs/zh/s05-element-actor.md) ([en](./docs/en/s05-element-actor.md)) | `browser_use/actor/element.py` | ✅ |
 | s06 | [看门狗事件总线 / Watchdog & event bus](./docs/zh/s06-watchdog-pattern.md) ([en](./docs/en/s06-watchdog-pattern.md)) | `browser_use/browser/watchdog_base.py` | ✅ |
 | s07 | [浏览器会话 / Browser session](./docs/zh/s07-browser-session.md) ([en](./docs/en/s07-browser-session.md)) | `browser_use/browser/session.py` | ✅ |
-| s08 | DOM 序列化 / DOM serializer | `browser_use/dom/serializer/serializer.py` | ⏳ |
-| s09 | DOM 服务 / DOM service | `browser_use/dom/service.py` | ⏳ |
-| s10 | Token 计费 / Token cost tracking | `browser_use/tokens/service.py` | ⏳ |
+| s08 | [DOM 序列化 / DOM serializer](./docs/zh/s08-dom-serializer.md) ([en](./docs/en/s08-dom-serializer.md)) | `browser_use/dom/serializer/serializer.py` | ✅ |
+| s09 | [DOM 服务 / DOM service](./docs/zh/s09-dom-service.md) ([en](./docs/en/s09-dom-service.md)) | `browser_use/dom/service.py` | ✅ |
+| s10 | [Token 计费 / Token cost tracking](./docs/zh/s10-token-cost.md) ([en](./docs/en/s10-token-cost.md)) | `browser_use/tokens/service.py` | ✅ |
 | s11 | 文件系统沙箱 / Filesystem sandbox | `browser_use/filesystem/file_system.py` | ⏳ |
 | s12 | 完整 agent loop / Full agent loop | `browser_use/agent/service.py` (full) | ⏳ |
 | s_full | 端到端集成 / End-to-end integration | (doc only) | ⏳ |

@@ -76,6 +76,9 @@ function guessUpstreamFile(slug: string): string | null {
     "s05-element-actor": "s05-element-actor.py",
     "s06-watchdog-pattern": "s06-watchdog-pattern.py",
     "s07-browser-session": "s07-browser-session.py",
+    "s08-dom-serializer": "s08-dom-serializer.py",
+    "s09-dom-service": "s09-dom-service.py",
+    "s10-token-cost": "s10-token-cost.py",
   };
   return map[slug] ?? null;
 }

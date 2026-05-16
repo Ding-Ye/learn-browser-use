@@ -27,6 +27,9 @@ jobs:
           - s05-element-actor
           - s06-watchdog-pattern
           - s07-browser-session
+          - s08-dom-serializer
+          - s09-dom-service
+          - s10-token-cost
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-go@v5
