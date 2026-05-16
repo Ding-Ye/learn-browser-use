@@ -5,4 +5,7 @@ use (
 	./agents/s02-llm-provider
 	./agents/s03-message-manager
 	./agents/s04-tool-registry
+	./agents/s05-element-actor
+	./agents/s06-watchdog-pattern
+	./agents/s07-browser-session
 )

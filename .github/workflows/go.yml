@@ -24,6 +24,9 @@ jobs:
           - s02-llm-provider
           - s03-message-manager
           - s04-tool-registry
+          - s05-element-actor
+          - s06-watchdog-pattern
+          - s07-browser-session
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-go@v5

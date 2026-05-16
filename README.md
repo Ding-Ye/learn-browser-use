@@ -50,9 +50,9 @@ Requires Go ≥ 1.24. Stdlib only.
 | s02 | [LLM Provider 抽象 / LLM Provider abstraction](./docs/zh/s02-llm-provider.md) ([en](./docs/en/s02-llm-provider.md)) | `browser_use/llm/base.py` + `openai/chat.py` | ✅ |
 | s03 | [消息管理与压缩 / Message manager + compaction](./docs/zh/s03-message-manager.md) ([en](./docs/en/s03-message-manager.md)) | `browser_use/agent/message_manager/service.py` | ✅ |
 | s04 | [工具注册表 / Tool registry & dispatcher](./docs/zh/s04-tool-registry.md) ([en](./docs/en/s04-tool-registry.md)) | `browser_use/tools/registry/service.py` + `tools/service.py` | ✅ |
-| s05 | 元素操作 (CDP) / Element actor (CDP) | `browser_use/actor/element.py` | ⏳ |
-| s06 | 看门狗事件总线 / Watchdog & event bus | `browser_use/browser/watchdog_base.py` | ⏳ |
-| s07 | 浏览器会话 / Browser session | `browser_use/browser/session.py` | ⏳ |
+| s05 | [元素操作 (CDP) / Element actor (CDP)](./docs/zh/s05-element-actor.md) ([en](./docs/en/s05-element-actor.md)) | `browser_use/actor/element.py` | ✅ |
+| s06 | [看门狗事件总线 / Watchdog & event bus](./docs/zh/s06-watchdog-pattern.md) ([en](./docs/en/s06-watchdog-pattern.md)) | `browser_use/browser/watchdog_base.py` | ✅ |
+| s07 | [浏览器会话 / Browser session](./docs/zh/s07-browser-session.md) ([en](./docs/en/s07-browser-session.md)) | `browser_use/browser/session.py` | ✅ |
 | s08 | DOM 序列化 / DOM serializer | `browser_use/dom/serializer/serializer.py` | ⏳ |
 | s09 | DOM 服务 / DOM service | `browser_use/dom/service.py` | ⏳ |
 | s10 | Token 计费 / Token cost tracking | `browser_use/tokens/service.py` | ⏳ |

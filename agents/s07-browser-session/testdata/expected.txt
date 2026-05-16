@@ -1,0 +1,32 @@
+$ go run .
+# session lifecycle demo
+
+Initial state: IsRunning=false
+After Start:   IsRunning=true  handlers(SessionStartedEvent)=1
+After Stop:    IsRunning=false  handlers(SessionStartedEvent)=0
+
+# CDP frame log (recorded by the stub client)
+[0] Target.attachToTarget map[flatten:true targetId:stub-target-0]
+[1] Target.detachFromTarget map[sessionId:stub-session-0]
+
+# Watchdog event log (recorded by LoggingWatchdog)
+[0] started: cdp=stub://recorder
+[1] navigate: url=https://example.com
+[2] stopped: reason=Stop() called
+
+$ go test -v ./...
+=== RUN   TestStartOpensStubCDP
+--- PASS: TestStartOpensStubCDP (0.00s)
+=== RUN   TestWatchdogsAttachOnStart
+--- PASS: TestWatchdogsAttachOnStart (0.00s)
+=== RUN   TestStopDisconnectsCleanly
+--- PASS: TestStopDisconnectsCleanly (0.00s)
+=== RUN   TestRestartWorks
+--- PASS: TestRestartWorks (0.00s)
+=== RUN   TestStartIdempotent
+--- PASS: TestStartIdempotent (0.00s)
+=== RUN   TestNavigateRoutesThroughBus
+--- PASS: TestNavigateRoutesThroughBus (0.00s)
+PASS
+ok  	learn-browser-use/s07-browser-session
+?   	learn-browser-use/s07-browser-session/watchdogs	[no test files]

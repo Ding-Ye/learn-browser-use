@@ -73,6 +73,9 @@ function guessUpstreamFile(slug: string): string | null {
     "s02-llm-provider": "s02-llm-provider.py",
     "s03-message-manager": "s03-message-manager.py",
     "s04-tool-registry": "s04-tool-registry.py",
+    "s05-element-actor": "s05-element-actor.py",
+    "s06-watchdog-pattern": "s06-watchdog-pattern.py",
+    "s07-browser-session": "s07-browser-session.py",
   };
   return map[slug] ?? null;
 }

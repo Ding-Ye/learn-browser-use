@@ -1,0 +1,46 @@
+$ go run .
+# recorded CDP frames
+
+[0] Input.dispatchMouseEvent
+  {
+    "backendNodeId": 42,
+    "type": "mouseMoved",
+    "x": 0,
+    "y": 0
+  }
+
+[1] Input.dispatchMouseEvent
+  {
+    "backendNodeId": 42,
+    "button": "left",
+    "clickCount": 1,
+    "modifiers": 10,
+    "type": "mousePressed",
+    "x": 0,
+    "y": 0
+  }
+
+[2] Input.dispatchMouseEvent
+  {
+    "backendNodeId": 42,
+    "button": "left",
+    "clickCount": 1,
+    "modifiers": 10,
+    "type": "mouseReleased",
+    "x": 0,
+    "y": 0
+  }
+
+[3] Input.insertText
+  {
+    "backendNodeId": 42,
+    "text": "hello 你好 👋"
+  }
+
+[4] Page.captureScreenshot
+  {
+    "backendNodeId": 42,
+    "format": "png"
+  }
+
+# screenshot bytes: 8 total, header=89504e470d0a1a0a

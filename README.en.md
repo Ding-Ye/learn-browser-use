@@ -45,9 +45,9 @@ Requires Go ≥ 1.24. Stdlib only — no external Go dependencies in any session
 | s02 | [LLM Provider abstraction](./docs/en/s02-llm-provider.md) ([zh](./docs/zh/s02-llm-provider.md)) | `browser_use/llm/base.py` + `openai/chat.py` | ✅ |
 | s03 | [Message manager + compaction](./docs/en/s03-message-manager.md) ([zh](./docs/zh/s03-message-manager.md)) | `browser_use/agent/message_manager/service.py` | ✅ |
 | s04 | [Tool registry & dispatcher](./docs/en/s04-tool-registry.md) ([zh](./docs/zh/s04-tool-registry.md)) | `browser_use/tools/registry/service.py` + `tools/service.py` | ✅ |
-| s05 | Element actor (CDP abstraction) | `browser_use/actor/element.py` | ⏳ |
-| s06 | Watchdog & event bus | `browser_use/browser/watchdog_base.py` | ⏳ |
-| s07 | Browser session | `browser_use/browser/session.py` | ⏳ |
+| s05 | [Element actor (CDP abstraction)](./docs/en/s05-element-actor.md) ([zh](./docs/zh/s05-element-actor.md)) | `browser_use/actor/element.py` | ✅ |
+| s06 | [Watchdog & event bus](./docs/en/s06-watchdog-pattern.md) ([zh](./docs/zh/s06-watchdog-pattern.md)) | `browser_use/browser/watchdog_base.py` | ✅ |
+| s07 | [Browser session](./docs/en/s07-browser-session.md) ([zh](./docs/zh/s07-browser-session.md)) | `browser_use/browser/session.py` | ✅ |
 | s08 | DOM serializer for LLM | `browser_use/dom/serializer/serializer.py` | ⏳ |
 | s09 | DOM service (snapshot + filter) | `browser_use/dom/service.py` | ⏳ |
 | s10 | Token cost tracking | `browser_use/tokens/service.py` | ⏳ |

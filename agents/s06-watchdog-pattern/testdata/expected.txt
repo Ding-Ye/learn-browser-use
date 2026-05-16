@@ -1,0 +1,19 @@
+# auto-registered handlers
+DownloadsWatchdog → [DownloadStartedEvent]
+PopupsWatchdog    → [JSDialogOpenedEvent]
+
+# emit one event of each type
+emitted DownloadStartedEvent
+emitted DownloadStartedEvent
+emitted JSDialogOpenedEvent
+emitted JSDialogOpenedEvent
+emitted NavigationEvent
+
+# summary
+downloads handled: 2
+  - foo.pdf (https://example.com/foo.pdf)
+  - bar.zip (https://example.com/bar.zip)
+dialogs handled:   2
+  - [confirm] "save changes?" → OK
+  - [prompt] "your name?" → Cancel
+navigation handlers: 0 (unsubscribed events drop silently)

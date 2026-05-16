@@ -49,19 +49,19 @@ export const CURRICULUM: ChapterMeta[] = [
     slug: "s05-element-actor",
     num: "s05",
     title: { zh: "元素操作 (CDP 抽象)", en: "Element actor (CDP abstraction)" },
-    available: false,
+    available: true,
   },
   {
     slug: "s06-watchdog-pattern",
     num: "s06",
     title: { zh: "看门狗事件总线", en: "Watchdog & event bus" },
-    available: false,
+    available: true,
   },
   {
     slug: "s07-browser-session",
     num: "s07",
     title: { zh: "浏览器会话", en: "Browser session" },
-    available: false,
+    available: true,
   },
   {
     slug: "s08-dom-serializer",
