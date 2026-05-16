@@ -16,11 +16,11 @@ export default async function Landing({
 
   return (
     <article className="prose-doc">
-      <h1>learn-hermes-agent</h1>
+      <h1>learn-browser-use</h1>
       <p className="text-[var(--fg-muted)]">
         {l === "zh"
-          ? "用 Go 从零渐进构建一个 hermes-agent，每节末尾对照上游 Python 源码。"
-          : "Build a hermes-agent from scratch in Go, session by session — each chapter ends with the upstream Python source."}
+          ? "用 Go 从零渐进构建一个 browser-use 风格的浏览器 agent，每节末尾对照上游 Python 源码。"
+          : "Build a browser-use-style browser agent from scratch in Go, session by session — each chapter ends with the upstream Python source."}
       </p>
 
       {intro.map((p, i) => (
@@ -61,13 +61,13 @@ export default async function Landing({
 }
 
 const INTRO_ZH = [
-  "这个仓库的目标不是教你「用」 hermes-agent，是教你「它怎么从零长出来」。",
-  "每一节加一个机制——agent loop、tool registry、skills、memory、plugin、MCP、cron、gateway——用 Go 写一份精简实现。看完十节，你会觉得 hermes-agent 不再是一团黑魔法。",
-  "Go 实现是教学骨架，hermes-agent 上游是 Python 实现。每节末尾的「上游源码阅读」把这两边对照起来，你能从 mini 版顺着指针读到生产代码。",
+  "这个仓库的目标不是教你「用」 browser-use，而是教你「它怎么从零长出来」。",
+  "每一节加一个机制——agent loop、Provider 抽象、消息管理、tool 注册表、watchdog 事件总线、CDP 元素操作、DOM 序列化、token 计费、文件系统沙箱、完整 agent——用 Go 写一份精简实现。看完十二节，你会觉得 browser-use 不再是一团黑魔法。",
+  "Go 实现是教学骨架，browser-use 上游是 Python 实现。每节末尾的「上游源码阅读」把这两边对照起来，你能从 mini 版顺着指针读到生产代码。",
 ];
 
 const INTRO_EN = [
-  "The goal of this repo is not to teach you to *use* hermes-agent — it is to teach you how it grows from scratch.",
-  "Each chapter adds one mechanism — agent loop, tool registry, skills, memory, plugins, MCP, cron, gateway — implemented as a small Go file. After ten chapters, hermes-agent stops being black magic.",
+  "The goal of this repo is not to teach you to *use* browser-use — it is to teach you how it grows from scratch.",
+  "Each chapter adds one mechanism — agent loop, Provider abstraction, message manager, tool registry, watchdog event bus, CDP element actor, DOM serializer, token cost, filesystem sandbox, full agent — implemented as a small Go module. After twelve chapters, browser-use stops being black magic.",
   "Go is the teaching skeleton; the upstream Python is the production implementation. The 'Upstream Source Reading' section at the end of every chapter bridges them — you can follow the pointers from the mini version straight into the real code.",
 ];

@@ -27,8 +27,6 @@ export default async function DocPage({
   const doc = await loadDoc(l, slug);
   if (!doc) notFound();
 
-  // Determine the upstream snippet name conventionally (slug → sNN-name → first part).
-  // s01-minimum-loop → s01-loop.py.  Adjust here if the convention differs per chapter.
   const upstreamFile = guessUpstreamFile(slug);
 
   const idx = CURRICULUM.findIndex((c) => c.slug === slug);
@@ -37,14 +35,7 @@ export default async function DocPage({
 
   return (
     <article className="prose-doc">
-      <div
-        // Doc body (already includes its own h1 and the in-doc "Upstream
-        // Source Reading" section as a code block — for s01 that fenced
-        // block has language "upstream:..." which currently renders as a
-        // plain code block. The dedicated server component below also
-        // surfaces the file in a richer panel.)
-        dangerouslySetInnerHTML={{ __html: doc.html }}
-      />
+      <div dangerouslySetInnerHTML={{ __html: doc.html }} />
       {upstreamFile && (
         <section className="mt-10 pt-6 border-t border-[var(--border)]">
           <h2 className="!mt-0">
@@ -77,19 +68,11 @@ export default async function DocPage({
 
 function guessUpstreamFile(slug: string): string | null {
   // Map docs/<locale>/<slug>.md → upstream-readings/<file>.py
-  // Convention: take "sNN" prefix + first descriptor word.
-  // s01-minimum-loop → s01-loop.py (we keep the existing file name).
   const map: Record<string, string> = {
-    "s01-minimum-loop": "s01-loop.py",
-    "s02-tool-registry": "s02-tool-registry.py",
-    "s03-skills": "s03-skills.py",
-    "s04-session": "s04-session.py",
-    "s05-memory": "s05-memory.py",
-    "s06-plugins-curator": "s06-plugins-curator.py",
-    "s07-mcp": "s07-mcp.py",
-    "s08-terminal-backends": "s08-terminal-backends.py",
-    "s09-multiprocess": "s09-multiprocess.py",
-    "s10-platforms": "s10-platforms.py",
+    "s01-minimum-loop": "s01-minimum-loop.py",
+    "s02-llm-provider": "s02-llm-provider.py",
+    "s03-message-manager": "s03-message-manager.py",
+    "s04-tool-registry": "s04-tool-registry.py",
   };
   return map[slug] ?? null;
 }
