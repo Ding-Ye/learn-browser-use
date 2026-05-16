@@ -19,7 +19,7 @@ export const CURRICULUM: ChapterMeta[] = [
       zh: "多模型接入指南（DeepSeek / Qwen / 自托管 …）",
       en: "Multi-model guide (DeepSeek / Qwen / self-hosted …)",
     },
-    available: false,
+    available: true,
   },
   {
     slug: "s01-minimum-loop",
