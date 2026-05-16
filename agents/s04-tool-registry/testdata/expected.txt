@@ -1,0 +1,62 @@
+$ go run .
+# registered tools and their auto-generated schemas
+
+{
+  "name": "scroll",
+  "description": "Scroll the page in the given direction.",
+  "parameters": {
+    "properties": {
+      "direction": {
+        "description": "scroll direction: up | down | top | bottom",
+        "type": "string"
+      }
+    },
+    "required": [
+      "direction"
+    ],
+    "type": "object"
+  }
+}
+
+{
+  "name": "search",
+  "description": "Search the web and return the top 3 result URLs.",
+  "parameters": {
+    "properties": {
+      "query": {
+        "description": "the search query to run",
+        "type": "string"
+      }
+    },
+    "required": [
+      "query"
+    ],
+    "type": "object"
+  }
+}
+
+{
+  "name": "type_text",
+  "description": "Type the given text into the input element identified by its selector-map index.",
+  "parameters": {
+    "properties": {
+      "index": {
+        "description": "the selector-map index of the target input element",
+        "type": "integer"
+      },
+      "text": {
+        "description": "the text to type into the element",
+        "type": "string"
+      }
+    },
+    "required": [
+      "text",
+      "index"
+    ],
+    "type": "object"
+  }
+}
+
+# example dispatch
+call: search({"query":"hacker news"})
+result: top 3 hits for "hacker news": example.com/hacker news, en.wikipedia.org/wiki/hacker news, github.com/search?q=hacker news

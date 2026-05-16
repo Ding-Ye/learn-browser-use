@@ -1,0 +1,13 @@
+$ go run . -mock "search hacker news"
+model: mock-llm
+stop_reason: tool_use
+tokens: in=12 out=8
+text: I will search for "search hacker news".
+action[0]: search({"query":"search hacker news"})
+
+# With a real key:
+$ OPENAI_API_KEY=sk-... go run . "what is 2+2?"
+model: gpt-4o-mini-2024-07-18
+stop_reason: end_turn
+tokens: in=14 out=5
+text: 2+2 equals 4.

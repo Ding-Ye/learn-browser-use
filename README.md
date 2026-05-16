@@ -47,9 +47,9 @@ Requires Go ≥ 1.24. Stdlib only.
 | # | 章节 / Chapter | 上游机制 / Upstream mechanism | 状态 |
 |---|---|---|---|
 | s01 | [最小 agent 循环 / Minimum agent loop](./docs/zh/s01-minimum-loop.md) ([en](./docs/en/s01-minimum-loop.md)) | `browser_use/agent/service.py` Agent.step | ✅ |
-| s02 | LLM Provider 抽象 / LLM Provider abstraction | `browser_use/llm/base.py` + `openai/chat.py` | ⏳ |
-| s03 | 消息管理与压缩 / Message manager + compaction | `browser_use/agent/message_manager/service.py` | ⏳ |
-| s04 | 工具注册表 / Tool registry & dispatcher | `browser_use/tools/registry/service.py` + `tools/service.py` | ⏳ |
+| s02 | [LLM Provider 抽象 / LLM Provider abstraction](./docs/zh/s02-llm-provider.md) ([en](./docs/en/s02-llm-provider.md)) | `browser_use/llm/base.py` + `openai/chat.py` | ✅ |
+| s03 | [消息管理与压缩 / Message manager + compaction](./docs/zh/s03-message-manager.md) ([en](./docs/en/s03-message-manager.md)) | `browser_use/agent/message_manager/service.py` | ✅ |
+| s04 | [工具注册表 / Tool registry & dispatcher](./docs/zh/s04-tool-registry.md) ([en](./docs/en/s04-tool-registry.md)) | `browser_use/tools/registry/service.py` + `tools/service.py` | ✅ |
 | s05 | 元素操作 (CDP) / Element actor (CDP) | `browser_use/actor/element.py` | ⏳ |
 | s06 | 看门狗事件总线 / Watchdog & event bus | `browser_use/browser/watchdog_base.py` | ⏳ |
 | s07 | 浏览器会话 / Browser session | `browser_use/browser/session.py` | ⏳ |

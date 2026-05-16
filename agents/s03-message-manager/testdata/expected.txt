@@ -1,0 +1,15 @@
+=== before compaction ===
+MessageManager{raw=20, max=5, budget=4000}
+raw history length: 20
+
+=== after Get() (Summarize strategy, max=5) ===
+effective length:   5
+[0] user      Find the trending repos on hacker news and email summary to [REDACTED]
+[1] system    [compacted: 16 turns covering search, type, click actions]
+[2] assistant Step 17: invoking click.
+[3] tool      leaked authorization: [REDACTED]
+[4] assistant Step 19: invoking search.
+
+=== redaction in action ===
+redacted sample: "leaked authorization: [REDACTED]"
+clean sample:    "Step 19: invoking search."

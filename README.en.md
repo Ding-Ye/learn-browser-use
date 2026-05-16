@@ -42,9 +42,9 @@ Requires Go ≥ 1.24. Stdlib only — no external Go dependencies in any session
 | # | Chapter | Upstream mechanism | Status |
 |---|---|---|---|
 | s01 | [Minimum agent loop](./docs/en/s01-minimum-loop.md) ([zh](./docs/zh/s01-minimum-loop.md)) | `browser_use/agent/service.py` Agent.step | ✅ |
-| s02 | LLM Provider abstraction | `browser_use/llm/base.py` + `openai/chat.py` | ⏳ |
-| s03 | Message manager + compaction | `browser_use/agent/message_manager/service.py` | ⏳ |
-| s04 | Tool registry & dispatcher | `browser_use/tools/registry/service.py` + `tools/service.py` | ⏳ |
+| s02 | [LLM Provider abstraction](./docs/en/s02-llm-provider.md) ([zh](./docs/zh/s02-llm-provider.md)) | `browser_use/llm/base.py` + `openai/chat.py` | ✅ |
+| s03 | [Message manager + compaction](./docs/en/s03-message-manager.md) ([zh](./docs/zh/s03-message-manager.md)) | `browser_use/agent/message_manager/service.py` | ✅ |
+| s04 | [Tool registry & dispatcher](./docs/en/s04-tool-registry.md) ([zh](./docs/zh/s04-tool-registry.md)) | `browser_use/tools/registry/service.py` + `tools/service.py` | ✅ |
 | s05 | Element actor (CDP abstraction) | `browser_use/actor/element.py` | ⏳ |
 | s06 | Watchdog & event bus | `browser_use/browser/watchdog_base.py` | ⏳ |
 | s07 | Browser session | `browser_use/browser/session.py` | ⏳ |
